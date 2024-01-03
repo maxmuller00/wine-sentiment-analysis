@@ -17,8 +17,9 @@ There were some pitfalls to this analysis. For the dataset, it only had wines th
 considered satisfactory to some degree (they all pass if it was an exam). We also don't have a clear system to see how the wines were scored, if
 such a system does exist between sommeliers, so it's hard to know if the wines were graded on subjective or objective factors. On the data processing
 side, the RoBERTa model was trained on tweets, which is generally a different vocabulary and subject matter than wine descriptions. Wine descriptions 
-by sommeliers are infamously obtuse, and this model wasn't trained on that level of nuance. If there already exists such a model that is trained on
-this type of data, that would be better to use to derive the level of nuance that exists within this environment. 
+by sommeliers are infamously obtuse, which is why I believe we find such strong neutral scores in both models. VADERS is untrained and RoBERTa is trained on Tweets which tend to be more declaritive statements.
+If there already exists such a model that is trained on
+wine descriptions and/or reviews, that would be better to use to derive the level of nuance that exists within this environment. 
 
 Overall, this was my first sentiment analysis and I had fun time playing with the data to see what I could find. I was able to learn a lot about the
 importance of the data I'm working with and what outcome I'm trying to find from it. 
